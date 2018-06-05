@@ -224,11 +224,17 @@
 		box-sizing: border-box;
 	}
 
+	.row img {
+	    width: auto;
+	    height: 150px;
+	}
+
 	.row > * {
 		float: left;
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+		text-align: center;
 	}
 
 	.row:after, .row:before {
@@ -2553,7 +2559,7 @@
 	}
 
 		#main > section {
-			border-top: solid 2px #efefef;
+			border-top: solid 2px #787878;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
 		}
