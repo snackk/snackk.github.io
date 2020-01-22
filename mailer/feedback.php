@@ -1,5 +1,12 @@
 <?php 
-require 'PHPMailerAutoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require 'Exception.php';
+require 'PHPMailer.php';
+//require 'SMTP.php';
+require 'POP3.php';
 require 'form_setting.php';
 
 if(isset($_POST)){
