@@ -1,1217 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-	<!--
-		Basic
-	-->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Diogo Santos - Resume</title>
+	<title>Diogo Santos — Software Engineer</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<meta name="description" content="Diogo Santos - Resume" />
-	<meta name="keywords" content="diogo santos, vcard, responsive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="description" content="Diogo Santos — Software Engineer specializing in distributed systems, security and building indie IoT & web products." />
+	<meta name="keywords" content="diogo santos, portfolio, software engineer, distributed systems, security, iot, resume" />
 	<meta name="author" content="snackk" />
 
-	<!--
-		Load Fonts
-	-->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<!-- Open Graph -->
+	<meta property="og:title" content="Diogo Santos — Software Engineer" />
+	<meta property="og:description" content="Distributed Systems & Security Engineer. Building indie web, IoT and automation projects." />
+	<meta property="og:image" content="images/avatar_v2.jpg" />
+	<meta property="og:type" content="website" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
 
-	<!--
-		Load CSS
-	-->
-	<link rel="stylesheet" href="css/basic.css" />
-	<link rel="stylesheet" href="css/layout.css" />
-	<link rel="stylesheet" href="css/blogs.css" />
-	<link rel="stylesheet" href="css/ionicons.css" />
-	<link rel="stylesheet" href="css/magnific-popup.css" />
-	<link rel="stylesheet" href="css/animate.css" />
-	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/style.css" />
 
-	<!--
-		Background Gradient
-	-->
-	<!--<link rel="stylesheet" href="css/gradient.css" />-->
-
-	<!--
-		Template New-Skin
-	-->
-	<link rel="stylesheet" href="css/new-skin/new-skin.css" />
-
-	<!--
-		Template RTL
-	-->
-	<!--<link rel="stylesheet" href="css/rtl.css" />-->
-
-	<!--
-		Template Colors
-	-->
-	<!--<link rel="stylesheet" href="css/template-colors/green.css" />-->
-	<link rel="stylesheet" href="css/template-colors/blue.css" />
-	<!--<link rel="stylesheet" href="css/template-colors/orange.css" />-->
-	<!--<link rel="stylesheet" href="css/template-colors/pink.css" />-->
-	<!--<link rel="stylesheet" href="css/template-colors/purple.css" />-->
-	<!--<link rel="stylesheet" href="css/template-colors/red.css" />-->
-
-	<!--
-		Template Dark
-	-->
-	<link rel="stylesheet" href="css/template-dark/dark.css" />
-
-
-	<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!--
-		Favicons
-	-->
 	<link rel="shortcut icon" href="images/favicons/favicon.png">
-
 </head>
 
 <body>
-	<div class="page new-skin">
 
-		<!-- preloader -->
-		<div class="preloader">
-			<div class="centrize full-width">
-				<div class="vertical-center">
-					<div class="spinner">
-						<div class="double-bounce1"></div>
-						<div class="double-bounce2"></div>
+	<div class="bg-decor"></div>
+
+	<!-- ============ Navbar ============ -->
+	<header class="navbar">
+		<div class="wrap">
+			<a href="#home" class="brand"><span class="dot"></span> Diogo Santos</a>
+
+			<nav class="nav-links">
+				<a href="#home">Home</a>
+				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
+
+			<div class="nav-cta">
+				<a class="icon-btn" target="_blank" rel="noopener" href="https://github.com/snackk" aria-label="GitHub"><i class="fab fa-github"></i></a>
+				<a class="icon-btn" target="_blank" rel="noopener" href="https://pt.linkedin.com/in/diogo-santos-48513b123" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+				<a class="btn btn-primary btn-sm" href="#contact">Get in touch</a>
+				<button class="nav-toggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mobile nav overlay -->
+	<div class="mobile-nav">
+		<a href="#home">Home</a>
+		<a href="#about">About</a>
+		<a href="#experience">Experience</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
+		<div class="mn-socials">
+			<a class="icon-btn" target="_blank" rel="noopener" href="https://github.com/snackk"><i class="fab fa-github"></i></a>
+			<a class="icon-btn" target="_blank" rel="noopener" href="https://pt.linkedin.com/in/diogo-santos-48513b123"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+	</div>
+
+	<!-- ============ Hero ============ -->
+	<section id="home" class="hero">
+		<div class="wrap">
+			<div class="hero-copy">
+				<h1>Hi, I'm Diogo — <br class="hide-mobile"> I build <span class="text-gradient">distributed, secure &amp; delightful</span> software.</h1>
+				<div class="role">Software Engineer at <b>Polarising</b>, collaborating with <b>Vesper Streaming</b>.</div>
+				<p class="lede">MSc in Distributed Systems &amp; Security from Instituto Superior Técnico. Outside of client work I design and ship my own web apps, IoT devices and homelab infrastructure — currently based in Lisbon, Portugal.</p>
+
+				<div class="hero-actions">
+					<a href="#projects" class="btn btn-primary"><i class="fas fa-diagram-project"></i> View Projects</a>
+					<a href="cv/DiogoManuelTunesPrudenteDosSantosResume_V3.pdf" class="btn btn-ghost" download><i class="fas fa-arrow-down"></i> Download Resume</a>
+				</div>
+
+				<div class="hero-stats">
+					<div class="stat"><b>8+</b><span>Years Professional Exp.</span></div>
+					<div class="stat"><b>20+</b><span>Public Repositories</span></div>
+					<div class="stat"><b><span id="age-stat">30</span></b><span>Years Old</span></div>
+				</div>
+			</div>
+
+			<div class="hero-portrait">
+				<div class="glow"></div>
+				<div class="frame">
+					<img src="images/avatar_v2.jpg" alt="Diogo Santos" />
+				</div>
+				<div class="floating-card fc-1"><i class="fas fa-code-branch"></i> Building in public</div>
+			</div>
+		</div>
+
+		<div class="scroll-cue"><span class="line"></span>scroll</div>
+	</section>
+
+	<!-- ============ About ============ -->
+	<section id="about" class="section reveal">
+		<div class="wrap">
+			<div class="section-head">
+				<div class="eyebrow">About Me</div>
+				<h2>A bit of my story</h2>
+			</div>
+
+			<div class="about-grid">
+				<div class="about-text">
+					<p>👋 Hey! I'm <strong>Diogo Santos</strong>, born and raised in Marinha Grande, Portugal, and now based in <strong>Lisbon</strong>.</p>
+					<p>I currently work at <strong>Polarising</strong> as a Software Engineer, collaborating with <strong>Vesper Streaming</strong> on large-scale video distribution platforms serving over a million concurrent users.</p>
+					<p>I'm passionate about building innovative and enjoyable projects — from full-stack web apps to embedded IoT devices and self-hosted infrastructure. Outside of work, you'll find me skateboarding, reading, gardening, hanging out with friends, or diving into a good sci-fi series.</p>
+				</div>
+
+				<div class="info-card">
+					<div class="row"><span>Age</span><span><span id="age-intro">30</span> years</span></div>
+					<div class="row"><span>Location</span><span>Lisbon, Portugal</span></div>
+					<div class="row"><span>Role</span><span>Software Engineer</span></div>
+					<div class="row"><span>Company</span><span>Polarising</span></div>
+					<div class="row"><span>Focus</span><span>Distributed Systems &amp; Security</span></div>
+					<div class="row"><span>Email</span><span>snackk026@gmail.com</span></div>
+				</div>
+			</div>
+
+			<div class="companies-strip">
+				<div class="label">Companies I've worked with</div>
+				<div class="logo-row">
+					<div class="wordmark" aria-label="Vesper Streaming">Vesper<span>Streaming</span></div>
+					<a target="_blank" rel="noopener" href="https://www.polarising.com/"><img src="images/companies/polarising.png" alt="Polarising" /></a>
+					<a target="_blank" rel="noopener" href="https://www.hlink.pt/"><img src="images/companies/logo-hlink.svg" alt="HLink" /></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ Experience & Education ============ -->
+	<section id="experience" class="section reveal">
+		<div class="wrap">
+			<div class="section-head">
+				<div class="eyebrow">Career</div>
+				<h2>Experience &amp; education</h2>
+			</div>
+
+			<div class="split-cols">
+				<div>
+					<div class="col-heading"><div class="ic"><i class="fas fa-briefcase"></i></div><h3>Experience</h3></div>
+					<div class="timeline">
+						<div class="tl-item">
+							<div class="date">2017 — Present</div>
+							<h4>Software Consultant</h4>
+							<div class="org">Polarising</div>
+							<p><span class="proj">Vesper Streaming</span> — B2B/B2C video &amp; sports data distribution, supporting 1M+ concurrent users.</p>
+							<details>
+								<summary>Read more</summary>
+								<div class="inner">
+									<p><b>Vesper Streaming</b> — Worked across the Migration team (built the onboarding microservice importing customers/purchases), the Payments/Licence team (payment &amp; access checks), and currently the Ads team, integrating an Ad Stitcher (YoSpace/MediaTailor) into live streams.<br><b>Stack:</b> Java 11, Dropwizard, AWS (MediaTailor, EC2, ECS, ECR, SQS, SES, S3, Aurora, DynamoDB, Lambda), JUnit, JDBI, Flyway, Maven, Python.</p>
+									<p><b>PORTA</b> — Polarising framework exposing datasources as WSDL/REST contracts via a friendly UI. Full-stack developer.<br><b>Stack:</b> Spring, Java 8, Angular 2+, Docker.</p>
+									<p><b>WeWin</b> — Android/iOS app for joint or single EuroMillions bets. Full-stack developer.<br><b>Stack:</b> Spring, Liquibase, MySQL, Docker, Jenkins, Angular 2+, Java 8.</p>
+								</div>
+							</details>
+						</div>
+						<div class="tl-item">
+							<div class="date">2015</div>
+							<h4>Summer Internship</h4>
+							<div class="org">HLink</div>
+							<p>Developed a cross-platform mobile app for Android, iOS and Windows Phone using KendoUI.</p>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="col-heading"><div class="ic"><i class="fas fa-graduation-cap"></i></div><h3>Education</h3></div>
+					<div class="timeline">
+						<div class="tl-item">
+							<div class="date">2015 — 2018</div>
+							<h4>Instituto Superior Técnico</h4>
+							<div class="org">Lisbon</div>
+							<p>MSc, Computer Science and Engineering — Distributed Systems &amp; Security.</p>
+						</div>
+						<div class="tl-item">
+							<div class="date">2011 — 2015</div>
+							<h4>Instituto Superior Técnico</h4>
+							<div class="org">Lisbon</div>
+							<p>BSc, Computer Science and Engineering.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="resume-download">
+				<a href="cv/DiogoManuelTunesPrudenteDosSantosResume_V3.pdf" class="btn btn-ghost" download><i class="fas fa-file-arrow-down"></i> Download full résumé (PDF)</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ Skills ============ -->
+	<section id="skills" class="section tight reveal">
+		<div class="wrap">
+			<div class="section-head">
+				<div class="eyebrow">Tech Stack</div>
+				<h2>Tools I reach for</h2>
+			</div>
+
+			<div class="skills-grid">
+				<div class="skill-card">
+					<div class="head"><div class="ic"><i class="fas fa-code"></i></div><h4>Core &amp; Backend</h4></div>
+					<div class="tag-list">
+						<span class="tag">Java</span><span class="tag">Dropwizard</span><span class="tag">Spring</span>
+						<span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Bash</span>
+						<span class="tag">Node.js</span><span class="tag">REST APIs</span>
+					</div>
+				</div>
+				<div class="skill-card">
+					<div class="head"><div class="ic"><i class="fas fa-cloud"></i></div><h4>Cloud &amp; AWS</h4></div>
+					<div class="tag-list">
+						<span class="tag">EC2</span><span class="tag">ECS / ECR</span><span class="tag">Lambda</span>
+						<span class="tag">Aurora</span><span class="tag">DynamoDB</span><span class="tag">S3</span>
+						<span class="tag">SQS</span><span class="tag">MediaTailor</span><span class="tag">Firebase</span>
+					</div>
+				</div>
+				<div class="skill-card">
+					<div class="head"><div class="ic"><i class="fas fa-layer-group"></i></div><h4>Frontend &amp; Product</h4></div>
+					<div class="tag-list">
+						<span class="tag">React</span><span class="tag">Vite</span><span class="tag">TypeScript</span>
+						<span class="tag">Tailwind CSS</span><span class="tag">Angular</span><span class="tag">Ionic</span>
+					</div>
+				</div>
+				<div class="skill-card">
+					<div class="head"><div class="ic"><i class="fas fa-hammer"></i></div><h4>DevOps &amp; Tooling</h4></div>
+					<div class="tag-list">
+						<span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">Terraform</span>
+						<span class="tag">Ansible</span><span class="tag">Maven</span><span class="tag">Git</span>
+						<span class="tag">Elastic / Kibana</span>
+					</div>
+				</div>
+				<div class="skill-card">
+					<div class="head"><div class="ic"><i class="fas fa-shield-halved"></i></div><h4>Security</h4></div>
+					<div class="tag-list">
+						<span class="tag">Distributed Systems</span><span class="tag">Steganography</span>
+						<span class="tag">CTFs</span><span class="tag">Secure Protocol Design</span>
+					</div>
+				</div>
+				<div class="skill-card">
+					<div class="head"><div class="ic"><i class="fas fa-microchip"></i></div><h4>Embedded &amp; IoT</h4></div>
+					<div class="tag-list">
+						<span class="tag">ESP8266</span><span class="tag">Arduino</span><span class="tag">MQTT</span>
+						<span class="tag">PlatformIO</span><span class="tag">PCB Design</span>
 					</div>
 				</div>
 			</div>
 		</div>
+	</section>
 
-		<!-- background -->
-		<div class="background" style="background-image: url(images/bg.jpg);"></div>
+	<!-- ============ Projects ============ -->
+	<section id="projects" class="section reveal">
+		<div class="wrap">
+			<div class="section-head">
+				<div class="eyebrow">Personal Projects</div>
+				<h2>What I've been building</h2>
+				<p>A selection of independent projects from the last few years — web apps, IoT devices and self-hosted infrastructure. All open-source on <a href="https://github.com/snackk" target="_blank" rel="noopener" style="color:var(--accent); font-weight:600;">GitHub ↗</a>.</p>
+			</div>
 
-		<!--
-			Container
-		-->
-		<div class="container opened" data-animation-in="rotateInUpLeft" data-animation-out="rotateOutUpLeft">
+			<div class="filter-bar">
+				<button class="filter-chip active" data-filter="all">All</button>
+				<button class="filter-chip" data-filter="web">Web / SaaS</button>
+				<button class="filter-chip" data-filter="iot">IoT / Embedded</button>
+				<button class="filter-chip" data-filter="devops">DevOps</button>
+				<button class="filter-chip" data-filter="backend">Backend</button>
+				<button class="filter-chip" data-filter="security">Security</button>
+			</div>
 
-			<!--
-				Header
-			-->
-			<header class="header">
+			<div class="projects-grid">
 
-				<!-- menu -->
-				<div class="top-menu">
-					<ul>
-						<li class="active">
-							<a href="#about-card">
-								<span class="icon ion-person"></span>
-								<span class="link">About</span>
-							</a>
-						</li>
-						<li>
-							<a href="#resume-card">
-								<span class="icon ion-android-list"></span>
-								<span class="link">Resume</span>
-							</a>
-						</li>
-						<li>
-							<a href="#works-card">
-								<span class="icon ion-paintbrush"></span>
-								<span class="link">Personal Projects</span>
-							</a>
-						</li>
-						<li>
-							<a href="#contacts-card">
-								<span class="icon ion-at"></span>
-								<span class="link">Contact</span>
-							</a>
-						</li>
-					</ul>
+				<!-- VizinhAI -->
+				<div class="project-card" data-category="web">
+					<div class="project-thumb logo-tile" style="--tile-bg: linear-gradient(135deg,#243055,#12151c);">
+						<img class="logo" src="images/works/vizinhai/logo.png" alt="VizinhAI logo" />
+						<span class="badge">Web / SaaS</span>
+						<span class="live-dot"><span></span>Live</span>
+					</div>
+					<div class="project-body">
+						<h3>VizinhAI</h3>
+						<p>A mobile-first PWA for condominium management — quotas, expenses, documents and assemblies, with multi-condo support and role-based access, all on a serverless Firebase backend.</p>
+						<div class="project-tags"><span>React</span><span>Firebase</span><span>Tailwind CSS</span><span>PWA</span></div>
+						<div class="project-links">
+							<a class="primary" href="https://vizinhai.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+							<a href="https://github.com/snackk/VizinhAI" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+						</div>
+					</div>
 				</div>
 
-			</header>
-
-			<!--
-				Card - Started
-			-->
-			<div class="card-started" id="home-card">
-
-				<!--
-					Profile
-				-->
-				<div class="profile">
-
-					<!-- profile image -->
-					<div class="slide" style="background-image: url(images/profile-bg.jpg);"></div>
-
-					<!-- profile photo -->
-					<div class="image">
-						<img src="images/avatar_v2.png" alt="" />
+				<!-- DivideAI -->
+				<div class="project-card" data-category="web">
+					<div class="project-thumb logo-tile" style="--tile-bg: linear-gradient(135deg,#2a2340,#12151c);">
+						<img class="logo" src="images/works/divideai/logo.png" alt="DivideAI logo" />
+						<span class="badge">Web / SaaS</span>
+						<span class="live-dot"><span></span>Live</span>
 					</div>
-
-					<!-- profile titles -->
-					<div class="title">Diogo Santos</div>
-					<div class="subtitle">Distributed Systems and Security Engineer</div>
-					<br>
-					<br>
-					<br>
-					<div>Software Engineer at <a href="https://polarising.com/">Polarising</a></div>
-
-					<!-- profile socials -->
-					<div class="social">
-						<a target="_blank" href="https://github.com/snackk"><span class="fab fa-github"></span></a>
-						<a>|</a>
-						<a target="_blank" href="https://pt.linkedin.com/in/diogo-santos-48513b123"><span class="fab fa-linkedin"></span></a>
+					<div class="project-body">
+						<h3>DivideAI</h3>
+						<p>A lightweight expense-splitting app with Google sign-in, real-time balances between friends, multi-language support and swipe gestures — installable as a PWA.</p>
+						<div class="project-tags"><span>React</span><span>Vite</span><span>Firebase</span><span>i18next</span></div>
+						<div class="project-links">
+							<a class="primary" href="https://divideai.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+							<a href="https://github.com/snackk/DivideAI" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+						</div>
 					</div>
+				</div>
 
-					<!-- profile buttons -->
+				<!-- ContaFlow AI -->
+				<div class="project-card" data-category="web">
+					<div class="project-thumb logo-tile" style="--tile-bg: linear-gradient(135deg,#1f3a34,#12151c);">
+						<img class="logo" src="images/works/contaflowai/logo.png" alt="ContaFlow AI logo" />
+						<span class="badge">Web / SaaS</span>
+						<span class="live-dot"><span></span>Live</span>
+					</div>
+					<div class="project-body">
+						<h3>ContaFlow AI</h3>
+						<p>A Jira-style Kanban board with per-person swimlanes, task precedences, recurring tasks, markdown descriptions with inline images, and multi-project support.</p>
+						<div class="project-tags"><span>React</span><span>Firebase</span><span>Tailwind CSS</span><span>Markdown</span></div>
+						<div class="project-links">
+							<a class="primary" href="https://conta-flow.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+							<a href="https://github.com/snackk/conta-flow-ai" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+						</div>
+					</div>
+				</div>
 
+				<!-- Climate control -->
+				<div class="project-card" data-category="iot">
+					<div class="project-thumb">
+						<img class="shot" src="images/works/climate-control/screenshot.png" alt="Bosch Climate Controller dashboard" />
+						<span class="badge">IoT / Embedded</span>
+					</div>
+					<div class="project-body">
+						<h3>Bosch Climate Controller</h3>
+						<p>A modern, dark-themed web dashboard to control a Midea-based Bosch Climate 3000i air conditioner over UART, running on an ESP8266 with OTA updates and a live WebSocket console.</p>
+						<div class="project-tags"><span>ESP8266</span><span>PlatformIO</span><span>C++</span><span>WebSockets</span></div>
+						<div class="project-links">
+							<a href="https://github.com/snackk/climate-control" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+						</div>
+					</div>
+				</div>
 
+				<!-- WakeOnWireless -->
+				<div class="project-card" data-category="iot">
+					<div class="project-thumb">
+						<img class="shot" src="images/works/wakeonwireless/schematic.png" alt="WakeOnWireless PCB schematic" />
+						<span class="badge">IoT / Embedded</span>
+					</div>
+					<div class="project-body">
+						<h3>WakeOnWireless</h3>
+						<p>A custom ESP8266 IoT device — own PCB design — to remotely wake and manage a connected computer over WiFi/MQTT, with captive-portal WiFi setup and a web dashboard.</p>
+						<div class="project-tags"><span>ESP8266</span><span>PCB Design</span><span>MQTT</span><span>C++</span></div>
+						<div class="project-links">
+							<a href="https://github.com/snackk/WakeOnWireless" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- HomeMediaApp -->
+				<div class="project-card" data-category="iot">
+					<div class="project-thumb">
+						<img class="shot" src="images/works/homemediaapp/screenshot.png" alt="HomeMediaApp iOS interface" />
+						<span class="badge">IoT / Mobile</span>
+					</div>
+					<div class="project-body">
+						<h3>HomeMediaApp</h3>
+						<p>An Ionic-based iOS/Android home-automation dashboard, controlling ESP8266-powered lights and devices over MQTT, plus a wake-on-LAN trigger and live analytics.</p>
+						<div class="project-tags"><span>Ionic</span><span>TypeScript</span><span>MQTT</span><span>Capacitor</span></div>
+						<div class="project-links">
+							<a href="https://github.com/snackk/HomeMediaApp" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Awesome media center -->
+				<div class="project-card" data-category="devops">
+					<div class="project-thumb placeholder" style="--tile-bg: linear-gradient(135deg,#7cf5d4,#7c9dff);">
+						<i class="fas fa-server"></i>
+						<span class="badge">DevOps / Homelab</span>
+					</div>
+					<div class="project-body">
+						<h3>Awesome Media Center</h3>
+						<p>A self-hosted media stack orchestrated with Docker Compose — Traefik, Portainer, Emby, Radarr, Sonarr, Jackett and Jenkins — all behind automatic HTTPS via Let's Encrypt.</p>
+						<div class="project-tags"><span>Docker Compose</span><span>Traefik</span><span>CI/CD</span><span>Self-hosted</span></div>
+						<div class="project-links">
+							<a href="https://github.com/snackk/awesome-media-center" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Shortener -->
+				<div class="project-card" data-category="backend">
+					<div class="project-thumb placeholder" style="--tile-bg: linear-gradient(135deg,#b98cff,#7c9dff);">
+						<i class="fas fa-link"></i>
+						<span class="badge">Backend</span>
+					</div>
+					<div class="project-body">
+						<h3>Shortener</h3>
+						<p>Yet another URL shortener — a small, focused Java &amp; Spring Boot REST API for creating short links and redirecting to the original URL, built as a backend playground.</p>
+						<div class="project-tags"><span>Java</span><span>Spring Boot</span><span>REST</span></div>
+						<div class="project-links">
+							<a href="https://github.com/snackk/shortener" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- HideDataInImage -->
+				<div class="project-card" data-category="security">
+					<div class="project-thumb placeholder" style="--tile-bg: linear-gradient(135deg,#7c9dff,#243055);">
+						<i class="fas fa-eye-slash"></i>
+						<span class="badge">Security</span>
+					</div>
+					<div class="project-body">
+						<h3>HideDataInImage</h3>
+						<p>A steganography tool that conceals arbitrary data inside images using the Least Significant Bit (LSB) algorithm across RGB channels — invisible to the human eye.</p>
+						<div class="project-tags"><span>C#</span><span>Steganography</span><span>Security</span></div>
+						<div class="project-links">
+							<a href="https://github.com/snackk/HideDataInImage" target="_blank" rel="noopener"><i class="fab fa-github"></i> View on GitHub</a>
+						</div>
+					</div>
 				</div>
 
 			</div>
 
-			<!--
-				Card - About
-			-->
-			<div class="card-inner animated active" id="about-card">
-				<div class="card-wrap">
-
-					<!--
-						About
-					-->
-					<div class="content about">
-
-						<!-- title -->
-						<div class="title">About Me</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="text-box">
-									<p>👋 Hey!</p>
-									<br>
-									<p id="age-about-me">
-										I'm Diogo Santos, born and raised in Marinha Grande, Portugal.
-									</p>
-									<br>
-									<p>
-										Currently based in Lisbon, I work at
-										<a href="https://polarising.com/">Polarising</a> as a Software Engineer, collaborating with
-										<a href="https://www.endeavorstreaming.com/">Endeavor Streaming</a>.
-									</p>
-									<br>
-									<p>
-										Passionate about building innovative and enjoyable projects.<br><br>
-										Outside of work, you’ll find me skateboarding, reading, gardening, hanging out with friends, or diving into a good sci-fi series.
-									</p>
-								</div>
-								<br>
-								<br>
-								<br>
-								<br>
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-								<div class="info-list">
-									<ul>
-										<li id="age-display"><strong>Age </strong> 30</li>
-										<li><strong>Address </strong> Lisbon, Portugal</li>
-									</ul>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<script>
-						function calculateAge(birthday) {
-							const birthDate = new Date(birthday);
-							const today = new Date();
-							let age = today.getFullYear() - birthDate.getFullYear();
-							const monthDiff = today.getMonth() - birthDate.getMonth();
-							if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
-								age--;
-							}
-							return age;
-						}
-						document.getElementById('age-display').innerHTML = `<strong>Age </strong> ${calculateAge('1992-12-17')}`;
-						document.getElementById('age-about-me').innerHTML = `My name's Diogo Santos and I'm ${calculateAge('1992-12-17')} years old born and raised in Portugal.`;
-					</script>
-					</div>
-
-					<!--
-						Overview
-					-->
-					<!--<div class="content services">
-
-
-						<div class="title">Overview</div>
-
-
-						<div class="row service-items border-line-v">
-
-
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon"><span class="ion ion-code"></span></div>
-									<div class="name">Development</div>
-									<p>
-										Love to brainstorm new and different ideas.
-									</p>
-								</div>
-							</div>
-
-
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-h">
-								<div class="service-item">
-									<div class="icon"><span class="ion ion-code-working"></span></div>
-									<div class="name">Security</div>
-									<p>
-										Enjoy the sporadic challenges of a good Capture the Flag (CTF).
-									</p>
-								</div>
-							</div>
-
-
-							<div class="col col-d-6 col-t-6 col-m-12">
-								<div class="service-item">
-									<div class="icon"><span class="ion ion-ios-game-controller-b"></span></div>
-									<div class="name">Game Development</div>
-									<p>
-										From time to time I develop some 2d/3d games, usually simple.
-									</p>
-								</div>
-							</div>
-
-
-							<div class="col col-d-6 col-t-6 col-m-12">
-								<div class="service-item">
-									<div class="icon"><span class="ion ion-bug"></span></div>
-									<div class="name">ups... Bug!</div>
-									<p>
-										We all got that moment right?
-									</p>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>-->
-
-					<!--
-						Companies
-					-->
-					<div class="content clients">
-
-						<!-- title -->
-						<div class="title">Companies I've worked for</div>
-
-						<!-- content -->
-						<div class="row client-items">
-
-							<div class="col col-d-3 col-t-3 col-m-6">
-								<div class="client-item">
-									<div class="image" style="margin-top: -1rem">
-										<a href="https://www.endeavorstreaming.com/" rel="home" aria-label="Endeavor Streaming">
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.08 190.79" style="transform: scale(1.35); margin-top: 10px">
-												<polygon style="fill:#fff;" points="105.04 65.79 101.44 60.97 87.58 61.05 61.49 95.39 67.5 103.34 88.59 103.34 82.58 95.37 105.04 65.79"></polygon><polygon style="fill:#fff;" points="83.13 125 86.73 129.82 102.79 129.74 128.87 95.39 122.87 87.45 99.58 87.45 105.59 95.42 83.13 125"></polygon><path style="fill:#fff;" d="M152.52,118.62h5.85a3.74,3.74,0,0,0,1.94,2.65,9.49,9.49,0,0,0,4.5.86,9.94,9.94,0,0,0,4.21-.7,2.23,2.23,0,0,0,1.44-2.06,1.91,1.91,0,0,0-.9-1.65,7.3,7.3,0,0,0-2.95-.89l-4.22-.6q-4.84-.72-7-2.35a5.3,5.3,0,0,1-2.2-4.52,5.45,5.45,0,0,1,3-4.92c2-1.18,4.83-1.76,8.39-1.76a15.38,15.38,0,0,1,7.66,1.57,7.21,7.21,0,0,1,3.47,4.86l-5.58.6a4.2,4.2,0,0,0-2-2.26,8.3,8.3,0,0,0-3.75-.69,10.39,10.39,0,0,0-4.06.63,2,2,0,0,0-1.43,1.82,1.78,1.78,0,0,0,.85,1.6,8.72,8.72,0,0,0,3.07.84l5,.76a13.58,13.58,0,0,1,6.48,2.29,5.5,5.5,0,0,1,2,4.55,5.69,5.69,0,0,1-3,5.17c-2,1.2-4.83,1.79-8.6,1.79Q153.35,126.21,152.52,118.62Z"></path><path style="fill:#fff;" d="M228.12,116.69a7.2,7.2,0,0,0,3.22-2.34,6.33,6.33,0,0,0,1.1-3.84q0-7.19-10.13-7.19H210.48v22.4H216v-8h6.61l5,8H234Zm-2.56-3.81a7.11,7.11,0,0,1-3.65.73H216v-6.15H222a7.28,7.28,0,0,1,3.65.69,2.55,2.55,0,0,1,1.13,2.36A2.59,2.59,0,0,1,225.56,112.88Z"></path><path style="fill:#fff;" d="M282.62,103.32h-6.71l-10.7,22.4h6l2.09-4.76H285l2.19,4.76h6.18Zm-7.47,13.43,4-9,4.05,9Z"></path><rect style="fill:#fff;" x="335.55" y="103.32" width="5.85" height="22.4"></rect><path style="fill:#fff;" d="M405.59,123.21a18.27,18.27,0,0,1-5.29,2.28,24.41,24.41,0,0,1-6.31.8,19.48,19.48,0,0,1-7.72-1.38,10.81,10.81,0,0,1-4.92-4,11.28,11.28,0,0,1-1.71-6.29,11.53,11.53,0,0,1,1.73-6.44,11.07,11.07,0,0,1,4.82-4,17.16,17.16,0,0,1,7.14-1.39c3.36,0,6,.65,7.95,2a9.15,9.15,0,0,1,3.84,5.06l-5.85.6a4.47,4.47,0,0,0-2.14-2.43,8.6,8.6,0,0,0-3.94-.77,7.61,7.61,0,0,0-5.64,1.93,7.31,7.31,0,0,0-1.93,5.41q0,7.35,8.34,7.34a16.39,16.39,0,0,0,6.21-1v-3.45H394V113.3h11.63Z"></path><polygon style="fill:#fff;" points="205.06 103.32 180.94 103.32 180.94 107.87 190.08 107.87 190.08 125.72 191.59 125.72 195.92 125.72 195.92 107.87 205.06 107.87 205.06 106.01 205.06 103.32"></polygon><polygon style="fill:#fff;" points="245.8 121.52 245.8 116.37 258.69 116.37 258.69 112.2 245.8 112.2 245.8 107.53 260.15 107.53 260.15 103.32 240.02 103.32 240.02 125.72 242.17 125.72 260.15 125.72 260.15 121.52 245.8 121.52"></polygon><polygon style="fill:#fff;" points="325.74 103.32 321.31 103.32 313.27 119.79 305.2 103.32 298.46 103.32 298.46 125.72 303.8 125.72 303.8 110.94 310.91 125.72 315.33 125.72 322.44 110.91 322.44 125.72 327.89 125.72 327.89 103.32 325.74 103.32"></polygon><polygon style="fill:#fff;" points="367.53 103.32 367.53 118.29 354.35 103.32 349.06 103.32 349.06 125.72 351.3 125.72 354.65 125.72 354.65 110.73 367.83 125.72 373.12 125.72 373.12 103.32 367.53 103.32"></polygon><polygon style="fill:#fff;" points="189.62 86.44 176.11 65.35 173.92 65.35 173.92 88.53 175.47 88.53 175.47 67.08 189.23 88.53 191.19 88.53 191.19 65.35 189.62 65.35 189.62 86.44"></polygon><path style="fill:#fff;" d="M211.53,84.71c-1.63,1.67-3.66,2.38-6.94,2.38H199V66.73h5.73a8.81,8.81,0,0,1,6.65,2.42c1.75,1.73,2.74,4.69,2.74,8.06a10.61,10.61,0,0,1-2.58,7.5m-6.14-19.36h-8V88.53h7c3.79,0,6.24-.83,8.2-2.73a11.36,11.36,0,0,0,3.12-8.42c0-7.34-4.05-12-10.33-12"></path><polygon style="fill:#fff;" points="247.13 65.44 237.51 88.63 239.06 88.63 241.72 82.27 251.43 82.27 251.89 80.89 242.31 80.89 248.06 67.02 257.03 88.63 258.55 88.63 248.97 65.44 247.13 65.44"></polygon><polygon style="fill:#fff;" points="267.74 87.06 258.77 65.44 257.26 65.44 266.85 88.63 268.67 88.63 278.29 65.44 276.75 65.44 267.74 87.06"></polygon><path style="fill:#fff;" d="M289.68,87.89c-4.95,0-8.45-4.5-8.45-10.9s3.37-10.77,8.45-10.77c5.34,0,8.75,4.33,8.75,11.09,0,2.64-1.23,10.58-8.75,10.58m.13-23.12c-6,0-10.22,5.08-10.22,12.25s4.27,12.29,10.22,12.29S300,84.23,300,77.21c0-7.32-4.21-12.44-10.23-12.44"></path><path style="fill:#fff;" d="M312.94,76.06H305.8V66.67h7.85c3.05,0,5.37,2,5.37,4.66,0,2.86-2.41,4.73-6.08,4.73m2.63,1.09a6.69,6.69,0,0,0,3-1.45,5.5,5.5,0,0,0,2-4.34c0-3.57-2.82-6-6.94-6h-9.43V88.53h1.58V77.41h8.26l5.69,11.12h1.58Z"></path><polygon style="fill:#fff;" points="221.61 77.66 231.83 77.66 231.83 76.22 221.61 76.22 221.61 66.8 233.31 66.8 233.8 65.35 220.06 65.35 220.06 88.53 233.99 88.53 233.99 87.09 221.61 87.09 221.61 77.66"></polygon><polygon style="fill:#fff;" points="157.16 77.66 167.39 77.66 167.39 76.22 157.16 76.22 157.16 66.8 168.87 66.8 169.35 65.35 155.61 65.35 155.61 88.53 169.54 88.53 169.54 87.09 157.16 87.09 157.16 77.66"></polygon>
-											</svg>
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image">
-										<a target="_blank" href="https://www.polarising.com/">
-											<img src="images/companies/polarising.png" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- client item -->
-							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
-								<div class="client-item">
-									<div class="image" style="padding-top: 0.4rem;">
-										<a target="_blank" href="https://www.hlink.pt/">
-											<img src="images/companies/logo-hlink.svg" alt="" />
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
+			<div class="more-projects">
+				<a class="btn btn-ghost" target="_blank" rel="noopener" href="https://github.com/snackk?tab=repositories"><i class="fab fa-github"></i> See all repositories on GitHub</a>
 			</div>
-
-			<!--
-				Card - Resume
-			-->
-			<div class="card-inner" id="resume-card">
-				<div class="card-wrap">
-
-					<!--
-						Resume
-					-->
-					<div class="content resume">
-
-						<!-- title -->
-						<div class="title">Resume</div>
-
-						<a href="cv/DiogoManuelTunesPrudenteDosSantosResume_V3.pdf" class="lnk" download="cv/DiogoManuelTunesPrudenteDosSantosResume.pdf">
-							<span class="text">Download my Resume</span>
-							<span class="ion ion-archive"></span>
-						</a>
-
-						<!-- content -->
-						<div class="row">
-
-							<!-- experience -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="resume-title border-line-h">
-									<div class="icon"><i class="ion ion-briefcase"></i></div>
-									<div class="name">Experience</div>
-								</div>
-								<div class="resume-items">
-									<div class="resume-item border-line-h active">
-										<div class="date">2017 - Present</div>
-										<div class="name">Software Consultant</div>
-										<div class="company">Polarising</div>
-										<p>
-											<b>Project:</b> Endeavor Streaming<br>
-											Endeavor Streaming primary business is in B2B and B2C content distribution. It operates a number of high-scale platforms to deliver video and sports data to a global customer base.
-											Currently supports more than 1 million concurrent users.<br><br>
-
-											<b>Main Responsibilities:</b> Worked on a couple of teams by now, Migration team, devloped onboard microservice, that imports all customers and purchases to Endeavor infrastructure; Payments/Licence team that handled that handles payments and access checks for users; Currently working on an Ads dedicated team, whereas we integrate with an Ad Sticher (YoSpace/MediaTailor) to stitch ads to a given Video/Stream.<br>
-											<b>Main Technologies:</b> Microservices, Java 11, Dropwizard, Amazon Web Services (MediaTailor, EC2, ECR, ECS, SQS, SES, S3, Aurora, DynamoDB, Lambda), JUnit, JDBI, Flyway, Maven, Git, Python
-											<br><br>
-
-											<b>Project:</b> PORTA - Polarising<br>
-											A Polarising framework that allows exposing datasources as WSDL contracts or REST endpoints, using a user friendly UI.<br><br>
-
-											<b>Main Responsibilities:</b> Full stack Developer<br>
-											<b>Main Technologies:</b> Spring, Java8, Angular 2+, Docker
-											<br><br>
-
-											<b>Project:</b> WeWin - Polarising<br>
-											A Polarising App, for Android/iOS, that allows users to bet on the EuroMillions as a joint bet, or a single bet.<br><br>
-
-											<b>Main Responsibilities:</b> Fullstack developer<br>
-											<b>Main Technologies:</b> Spring, Liquibase, Mysql, Docker, Jenkins, Angular 2+, Java 8
-										</p>
-									</div>
-									<div class="resume-item border-line-h">
-										<div class="date">2015-2015</div>
-										<div class="name">Summer Internship</div>
-										<div class="company">HLink</div>
-										<p>
-											Developed a mobile App for Android, IOS and WindowsPhone using KendoUI.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<!-- education -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="resume-title border-line-h">
-									<div class="icon"><i class="ion ion-university"></i></div>
-									<div class="name">Education</div>
-								</div>
-								<div class="resume-items">
-									<div class="resume-item border-line-h active">
-										<div class="date">2015 - 2018</div>
-										<div class="name">Instituto Superior Técnico</div>
-										<div class="company">Lisbon</div>
-										<p>
-											Master of Science (MSc) Computer Science and Engineering - Distributed Systems and Security
-										</p>
-									</div>
-									<div class="resume-item border-line-h">
-										<div class="date">2011 - 2015</div>
-										<div class="name">Instituto Superior Técnico</div>
-										<div class="company">Lisbon</div>
-										<p>
-											Bachelor of Science (BSc) Computer Science and Engineering
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-					<!--
-						Skills
-					-->
-					<div class="content skills">
-
-						<!-- title -->
-						<div class="title">Tech Stack</div>
-
-						<!-- content -->
-						<div class="row">
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="ion ion-code"></i></div>
-										<div class="name">Core</div>
-									</div>
-									<ul>
-										<li class="border-line-h">
-											<div class="name">JAVA</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Dropwizard</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Spring</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">SQL</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Python</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Bash</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="ion ion-cloud"></i></div>
-										<div class="name">AWS</div>
-									</div>
-									<ul>
-										<li class="border-line-h">
-											<div class="name">MediaTailor</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">EC2</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">ECS</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">ECR</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Lambda</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Aurora</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">SQS</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">S3</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Kinesis</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">DynamoDB</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">ApiGateway</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<!-- skill item -->
-							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
-								<div class="skills-list">
-									<div class="skill-title border-line-h">
-										<div class="icon"><i class="ion ion-hammer"></i></div>
-										<div class="name">Technologies</div>
-									</div>
-									<ul>
-										<li class="border-line-h">
-											<div class="name">Docker</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li>
-											<div class="name">Travis Ci/Cd</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Jenkins</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Maven</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Elastic</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Kibana</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Ansible</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Terraform</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">TerraGrunt</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-										<li class="border-line-h">
-											<div class="name">Git</div>
-											<div class="progress">
-												<div class="percentage" style="width:100%;"></div>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Works
-			-->
-			<div class="card-inner" id="works-card">
-				<div class="card-wrap">
-
-					<!--
-						Works
-					-->
-					<div class="content works">
-
-						<!-- title -->
-						<div class="title">Personal Projects</div>
-
-						<!-- filters -->
-						<div class="filter-menu filter-button-group">
-							<div class="f_btn active">
-								<label><input type="radio" name="fl_radio" value="grid-item" />All</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="game" />Gaming</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="linux" />Linux</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="riot" />Robotics / IoT</label>
-							</div>
-							<div class="f_btn">
-								<label><input type="radio" name="fl_radio" value="web" />Web</label>
-							</div>
-						</div>
-
-						<!-- content -->
-						<div class="row grid-items border-line-v">
-
-							<!-- STARTUP -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item web border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-5" class="has-popup-media">
-											<img src="images/works/startup/logo.jpg" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-5" class="name has-popup-media">Tiles Landing Page</a>
-										<div class="category">Web</div>
-									</div>
-									<div id="popup-5" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/startup/logo.jpg" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Tiles Landing Page</h1>
-													<div class="blog-detail">Web</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-													<a href="https://tiles.social/" class="button">
-														<span class="text">View Project</span>
-														<span class="arrow"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- ARCH-LINUX -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item linux border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-0" class="has-popup-media">
-											<img src="images/works/arch-linux/arch.png" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-0" class="name has-popup-media">Arch-Linux with Deepin</a>
-										<div class="category">Linux</div>
-									</div>
-									<div id="popup-0" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/arch-linux/arch.png" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Arch-Linux with Deepin</h1>
-													<div class="blog-detail">Linux</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-													<a href="https://github.com/snackk/arch-installation" class="button">
-														<span class="text">View Project</span>
-														<span class="arrow"></span>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- OWNCLOUD -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item linux border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-1" class="has-popup-media">
-											<img src="images/works/rpi/owncloud.jpg" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-1" class="name has-popup-media">Raspberry Pi with OwnCloud</a>
-										<div class="category">Linux</div>
-									</div>
-									<div id="popup-1" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/rpi/owncloud.jpg" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Raspberry Pi with OwnCloud</h1>
-													<div class="blog-detail">Linux</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- RETROPI -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item linux border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-2" class="has-popup-media">
-											<img src="images/works/rpi/nespi.jpg" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-2" class="name has-popup-media">Raspberry Pi with RetroPi</a>
-										<div class="category">Linux</div>
-									</div>
-									<div id="popup-2" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/rpi/nespi.jpg" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Raspberry Pi with RetroPi</h1>
-													<div class="blog-detail">Linux</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-							<!-- 42 - Choose Your Side -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item game border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-6" class="has-popup-media">
-											<img src="images/works/games/42.png" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-6" class="name has-popup-media">42 - Choose Your Side</a>
-										<div class="category">Gaming</div>
-									</div>
-									<div id="popup-6" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<iframe width="100%" height="400" src="https://www.youtube.com/embed/hP3WnTAHkMg?cc_load_policy=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>42 - Choose Your Side</h1>
-													<div class="blog-detail">Gaming</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- 42 - Choose Your Side -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item game border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-7" class="has-popup-media">
-											<img src="images/works/games/pi_hard.png" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-7" class="name has-popup-media">Pi Hard</a>
-										<div class="category">Gaming</div>
-									</div>
-									<div id="popup-7" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<iframe width="100%" height="400" src="https://www.youtube.com/embed/trnEcc4HcAc?cc_load_policy=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>Pi Hard</h1>
-													<div class="blog-detail">Gaming</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- LED LAMP -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item riot border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-4" class="has-popup-media">
-											<img src="images/works/node-mcu/led-lamp.png" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-4" class="name has-popup-media">LED Lamp using NodeMCU</a>
-										<div class="category">Robotics / IoT</div>
-									</div>
-									<div id="popup-4" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/node-mcu/led-lamp.png" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>LED Lamp using NodeMCU</h1>
-													<div class="blog-detail">Robotics / IoT</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
-							<!-- 4WD CAR -->
-							<div class="col col-d-6 col-t-6 col-m-12 grid-item riot border-line-h">
-								<div class="box-item">
-									<div class="image">
-										<a href="#popup-3" class="has-popup-media">
-											<img src="images/works/arduino/4wd_car.png" alt="" />
-											<span class="info">
-												<span class="ion ion-images"></span>
-											</span>
-										</a>
-									</div>
-									<div class="desc">
-										<a href="#popup-3" class="name has-popup-media">4WD Car using Arduino</a>
-										<div class="category">Robotics / IoT</div>
-									</div>
-									<div id="popup-3" class="popup-box mfp-fade mfp-hide">
-										<div class="content">
-											<div class="image">
-												<img src="images/works/arduino/4wd_car.png" alt="">
-											</div>
-											<div class="desc">
-												<div class="post-box">
-													<h1>4WD Car using Arduino</h1>
-													<div class="blog-detail">Robotics / IoT</div>
-													<div class="blog-content">
-														<p>
-															First
-														</p>
-														<p>
-															Second
-														</p>
-														<blockquote>
-															Third
-														</blockquote>
-														<p>
-															Forth
-														</p>
-														<ul class="list-style">
-															<li>Greatest properly off ham exercise all.</li>
-															<li>Unsatiable invitation its possession nor off.</li>
-															<li>All difficulty estimating unreserved increasing the solicitude.</li>
-														</ul>
-														<p>
-															Last
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="clear"></div>
-						</div>
-
-					</div>
-
-				</div>
-			</div>
-
-			<!--
-				Card - Contacts
-			-->
-			<div class="card-inner contacts" id="contacts-card">
-				<div class="card-wrap">
-
-					<!--
-						Conacts Info
-					-->
-					<div class="content contacts">
-
-						<!-- title -->
-						<div class="title">Contact</div>
-
-						<!-- content -->
-						<div class="row">
-							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
-
-								<div class="info-list">
-									<ul>
-										<li><strong>Address </strong> Lisbon, Portugal</li>
-										<li><strong>Email </strong> snackk026@gmail.com</li>
-									</ul>
-								</div>
-							</div>
-							<div class="clear"></div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
 		</div>
-	</div>
+	</section>
 
-	<!--
-		jQuery Scripts
-	-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.validate.js"></script>
-	<script src="js/jquery.magnific-popup.js"></script>
-	<script src="js/imagesloaded.pkgd.js"></script>
-	<script src="js/isotope.pkgd.js"></script>
-	<script src="js/jquery.slimscroll.js"></script>
-	<script src="js/owl.carousel.js"></script>
+	<!-- ============ Contact ============ -->
+	<section id="contact" class="section reveal">
+		<div class="wrap">
+			<div class="contact-card">
+				<div class="eyebrow" style="justify-content:center;">Contact</div>
+				<h2>Let's build something together.</h2>
+				<p>Whether it's a project idea, a job opportunity, or just to talk tech — my inbox is always open.</p>
+				<div class="contact-actions">
+					<a class="btn btn-primary" href="mailto:snackk026@gmail.com"><i class="fas fa-envelope"></i> snackk026@gmail.com</a>
+					<a class="btn btn-ghost" target="_blank" rel="noopener" href="https://pt.linkedin.com/in/diogo-santos-48513b123"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+					<a class="btn btn-ghost" target="_blank" rel="noopener" href="https://github.com/snackk"><i class="fab fa-github"></i> GitHub</a>
+				</div>
+				<div class="contact-meta">
+					<span><i class="fas fa-location-dot"></i>Lisbon, Portugal</span>
+					<span><i class="fas fa-briefcase"></i>Open to freelance &amp; collaborations</span>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<script>
-		// Initialize and add the map
-		function initMap() {
-			var lisbon = {lat: 38.71667, lng: -9.13333};
-			var map = new google.maps.Map(
-					document.getElementById('lxMap'), {zoom: 10, center: lisbon});
-			var marker = new google.maps.Marker({position: lisbon, map: map});
-		}
-	</script>
+	<footer class="site-footer">
+		<div class="wrap">
+			<p>© <span id="year">2026</span> Diogo Santos. Built with care in Lisbon.</p>
+			<div class="footer-socials">
+				<a class="icon-btn" target="_blank" rel="noopener" href="https://github.com/snackk" aria-label="GitHub"><i class="fab fa-github"></i></a>
+				<a class="icon-btn" target="_blank" rel="noopener" href="https://pt.linkedin.com/in/diogo-santos-48513b123" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+				<a class="icon-btn" href="mailto:snackk026@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+			</div>
+		</div>
+	</footer>
 
-	<!--
-		Google map api
-	-->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMkq65q4cNSwoqlP_lcsiXWiwijXGa_jU&callback=initMap"></script>
+	<button class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
 
-	<!--
-		Main Scripts
-	-->
-	<script src="js/scripts.js"></script>
-
-	</div>
+	<script src="js/app.js"></script>
 </body>
 </html>
