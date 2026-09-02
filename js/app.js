@@ -7,6 +7,33 @@
 	var sections = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
 	var navAnchors = Array.prototype.slice.call(document.querySelectorAll('.nav-links a, .mobile-nav a'));
 
+	/* ---------- Hero ambient photo: fade + drift on scroll ---------- */
+	var heroPhotoBg = document.getElementById('heroPhotoBg');
+	var heroSection = document.getElementById('home');
+	var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	var heroPhotoTicking = false;
+
+	function updateHeroPhotoBg() {
+		if (!heroPhotoBg) return;
+		var heroHeight = heroSection ? heroSection.offsetHeight : window.innerHeight;
+		var y = window.scrollY || window.pageYOffset;
+		// Fully faded out by the time the user has scrolled ~80% of the hero's height.
+		var progress = Math.min(1, y / (heroHeight * 0.8));
+		var opacity = 1 - progress;
+		heroPhotoBg.style.opacity = String(opacity);
+		if (!reduceMotion) {
+			heroPhotoBg.style.transform = 'translateY(' + (y * 0.18) + 'px) scale(' + (1 + progress * 0.04) + ')';
+		}
+		heroPhotoTicking = false;
+	}
+
+	function requestHeroPhotoUpdate() {
+		if (!heroPhotoTicking) {
+			heroPhotoTicking = true;
+			window.requestAnimationFrame(updateHeroPhotoBg);
+		}
+	}
+
 	function updateActiveNav() {
 		var scrollPos = window.scrollY + 140;
 		var currentId = sections.length ? sections[0].id : null;
@@ -24,6 +51,7 @@
 		if (navbar) navbar.classList.toggle('scrolled', y > 12);
 		if (backToTop) backToTop.classList.toggle('show', y > 500);
 		updateActiveNav();
+		requestHeroPhotoUpdate();
 	}
 	document.addEventListener('scroll', onScroll, { passive: true });
 	onScroll();
@@ -112,6 +140,9 @@
 	/* ---------- Footer year ---------- */
 	var yearEl = document.getElementById('year');
 	if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+	/* Recalculate hero photo fade on resize/orientation change */
+	window.addEventListener('resize', requestHeroPhotoUpdate, { passive: true });
 })();
 
 

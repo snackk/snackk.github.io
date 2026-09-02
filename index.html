@@ -28,6 +28,11 @@
 
 	<div class="bg-decor"></div>
 
+	<!-- Large ambient skateboards photo, fades out as you scroll past the hero -->
+	<div class="hero-photo-bg" id="heroPhotoBg" aria-hidden="true">
+		<img src="images/skateboards-bg.jpg" alt="" />
+	</div>
+
 	<!-- ============ Navbar ============ -->
 	<header class="navbar">
 		<div class="wrap">
@@ -67,18 +72,18 @@
 	<section id="home" class="hero">
 		<div class="wrap">
 			<div class="hero-copy">
-				<h1>Hi, I'm Diogo — <br class="hide-mobile"> I build <span class="text-gradient">distributed, secure &amp; delightful</span> software.</h1>
-				<div class="role">Software Engineer at <b>Polarising</b>, collaborating with <b>Vesper Streaming</b>.</div>
-				<p class="lede">MSc in Distributed Systems &amp; Security from Instituto Superior Técnico. Outside of client work I design and ship my own web apps, IoT devices and homelab infrastructure — currently based in Lisbon, Portugal.</p>
+				<h1>Hi, I'm Diogo — <br class="hide-mobile"> I build <span class="text-gradient">distributed, secure &amp; resilient</span> software.</h1>
+				<div class="role">Software Engineer at <b>Polarising</b>, collaborating with <b>Vesper Streaming</b> building a B2B Streaming platform.</div>
+				<p class="lede">MSc in Distributed Systems &amp; Security from Instituto Superior Técnico. Outside of client work I design and ship my own web apps, IoT devices and homelab infrastructure, and I have a passion for skateboarding — currently based in Lisbon, Portugal.</p>
 
 				<div class="hero-actions">
-					<a href="#projects" class="btn btn-primary"><i class="fas fa-diagram-project"></i> View Projects</a>
+					<a href="#projects" class="btn btn-primary"><i class="fas fa-project-diagram"></i> View Projects</a>
 					<a href="cv/DiogoManuelTunesPrudenteDosSantosResume_V3.pdf" class="btn btn-ghost" download><i class="fas fa-arrow-down"></i> Download Resume</a>
 				</div>
 
 				<div class="hero-stats">
-					<div class="stat"><b>8+</b><span>Years Professional Exp.</span></div>
-					<div class="stat"><b>20+</b><span>Public Repositories</span></div>
+					<div class="stat"><b>10+</b><span>Years Professional Exp.</span></div>
+					<div class="stat"><b>20+</b><span>Repositories in GitHub</span></div>
 					<div class="stat"><b><span id="age-stat">30</span></b><span>Years Old</span></div>
 				</div>
 			</div>
@@ -88,7 +93,7 @@
 				<div class="frame">
 					<img src="images/avatar_v2.jpg" alt="Diogo Santos" />
 				</div>
-				<div class="floating-card fc-1"><i class="fas fa-code-branch"></i> Building in public</div>
+				<!--<div class="floating-card fc-1"><i class="fas fa-code-branch"></i> Building in public</div>-->
 			</div>
 		</div>
 
@@ -105,13 +110,14 @@
 
 			<div class="about-grid">
 				<div class="about-text">
-					<p>👋 Hey! I'm <strong>Diogo Santos</strong>, born and raised in Marinha Grande, Portugal, and now based in <strong>Lisbon</strong>.</p>
-					<p>I currently work at <strong>Polarising</strong> as a Software Engineer, collaborating with <strong>Vesper Streaming</strong> on large-scale video distribution platforms serving over a million concurrent users.</p>
+					<p>👋 Hey! </p>
+          <p>I'm <strong>Diogo Santos</strong>, born and raised in Marinha Grande, Portugal, world capital of the Glass industry, and now based in <strong>Lisbon</strong>.</p>
+					<p>I currently work at <strong>Polarising</strong> as a Software Engineer, collaborating with <strong>Vesper Streaming</strong> on <strong>large-scale video distribution platforms serving over a million concurrent users.</strong></p>
 					<p>I'm passionate about building innovative and enjoyable projects — from full-stack web apps to embedded IoT devices and self-hosted infrastructure. Outside of work, you'll find me skateboarding, reading, gardening, hanging out with friends, or diving into a good sci-fi series.</p>
 				</div>
 
 				<div class="info-card">
-					<div class="row"><span>Age</span><span><span id="age-intro">30</span> years</span></div>
+					<div class="row"><span>Age</span><span><span id="age-intro">33</span> years</span></div>
 					<div class="row"><span>Location</span><span>Lisbon, Portugal</span></div>
 					<div class="row"><span>Role</span><span>Software Engineer</span></div>
 					<div class="row"><span>Company</span><span>Polarising</span></div>
@@ -123,9 +129,9 @@
 			<div class="companies-strip">
 				<div class="label">Companies I've worked with</div>
 				<div class="logo-row">
-					<div class="wordmark" aria-label="Vesper Streaming">Vesper<span>Streaming</span></div>
-					<a target="_blank" rel="noopener" href="https://www.polarising.com/"><img src="images/companies/polarising.png" alt="Polarising" /></a>
-					<a target="_blank" rel="noopener" href="https://www.hlink.pt/"><img src="images/companies/logo-hlink.svg" alt="HLink" /></a>
+					<a class="wordmark" target="_blank" rel="noopener" href="https://www.endeavorstreaming.com/platform/" aria-label="Vesper Streaming">Vesper<span>Streaming</span></a>
+					<a target="_blank" rel="noopener" href="https://www.polarising.com/"><img src="images/companies/polarising-LOGO-03-1-268x62.png" alt="Polarising" /></a>
+					<a target="_blank" rel="noopener" href="https://www.hlink.pt/"><img src="images/companies/hlink-Logo-Branco.webp" alt="HLink" /></a>
 				</div>
 			</div>
 		</div>
@@ -151,7 +157,7 @@
 							<details>
 								<summary>Read more</summary>
 								<div class="inner">
-									<p><b>Vesper Streaming</b> — Worked across the Migration team (built the onboarding microservice importing customers/purchases), the Payments/Licence team (payment &amp; access checks), and currently the Ads team, integrating an Ad Stitcher (YoSpace/MediaTailor) into live streams.<br><b>Stack:</b> Java 11, Dropwizard, AWS (MediaTailor, EC2, ECS, ECR, SQS, SES, S3, Aurora, DynamoDB, Lambda), JUnit, JDBI, Flyway, Maven, Python.</p>
+									<p><b>Vesper Streaming</b> — Worked across the Migration team (built the onboarding microservice importing customers/purchases), the Payments/Licence team (payment &amp; access checks), and currently the Ads team, integrating an Ad Stitcher (YoSpace/MediaTailor) into live streams — working hands-on with HLS/DASH manifest manipulation, DRM-protected content and FFmpeg-based transcoding pipelines.<br><b>Stack:</b> Java 11, Dropwizard, AWS (MediaTailor, EC2, ECS, ECR, SQS, SES, S3, Aurora, DynamoDB, Lambda), FFmpeg, HLS, DASH, DRM, JUnit, JDBI, Flyway, Maven, Python.</p>
 									<p><b>PORTA</b> — Polarising framework exposing datasources as WSDL/REST contracts via a friendly UI. Full-stack developer.<br><b>Stack:</b> Spring, Java 8, Angular 2+, Docker.</p>
 									<p><b>WeWin</b> — Android/iOS app for joint or single EuroMillions bets. Full-stack developer.<br><b>Stack:</b> Spring, Liquibase, MySQL, Docker, Jenkins, Angular 2+, Java 8.</p>
 								</div>
@@ -186,7 +192,7 @@
 			</div>
 
 			<div class="resume-download">
-				<a href="cv/DiogoManuelTunesPrudenteDosSantosResume_V3.pdf" class="btn btn-ghost" download><i class="fas fa-file-arrow-down"></i> Download full résumé (PDF)</a>
+				<a href="cv/DiogoManuelTunesPrudenteDosSantosResume_V3.pdf" class="btn btn-ghost" download><i class="fas fa-arrow-down"></i> Download Resume</a>
 			</div>
 		</div>
 	</section>
@@ -196,7 +202,6 @@
 		<div class="wrap">
 			<div class="section-head">
 				<div class="eyebrow">Tech Stack</div>
-				<h2>Tools I reach for</h2>
 			</div>
 
 			<div class="skills-grid">
@@ -217,6 +222,14 @@
 					</div>
 				</div>
 				<div class="skill-card">
+					<div class="head"><div class="ic"><i class="fas fa-broadcast-tower"></i></div><h4>Streaming &amp; Media</h4></div>
+					<div class="tag-list">
+						<span class="tag">FFmpeg</span><span class="tag">HLS</span><span class="tag">DASH</span>
+						<span class="tag">DRM</span><span class="tag">AWS MediaTailor</span><span class="tag">SQS</span>
+						<span class="tag">Ad Stitching</span><span class="tag">Video Transcoding</span>
+					</div>
+				</div>
+				<div class="skill-card">
 					<div class="head"><div class="ic"><i class="fas fa-layer-group"></i></div><h4>Frontend &amp; Product</h4></div>
 					<div class="tag-list">
 						<span class="tag">React</span><span class="tag">Vite</span><span class="tag">TypeScript</span>
@@ -232,7 +245,7 @@
 					</div>
 				</div>
 				<div class="skill-card">
-					<div class="head"><div class="ic"><i class="fas fa-shield-halved"></i></div><h4>Security</h4></div>
+					<div class="head"><div class="ic"><i class="fas fa-shield-alt"></i></div><h4>Security</h4></div>
 					<div class="tag-list">
 						<span class="tag">Distributed Systems</span><span class="tag">Steganography</span>
 						<span class="tag">CTFs</span><span class="tag">Secure Protocol Design</span>
@@ -281,7 +294,7 @@
 						<p>A mobile-first PWA for condominium management — quotas, expenses, documents and assemblies, with multi-condo support and role-based access, all on a serverless Firebase backend.</p>
 						<div class="project-tags"><span>React</span><span>Firebase</span><span>Tailwind CSS</span><span>PWA</span></div>
 						<div class="project-links">
-							<a class="primary" href="https://vizinhai.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+							<a class="primary" href="https://vizinhai.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
 							<a href="https://github.com/snackk/VizinhAI" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
 						</div>
 					</div>
@@ -299,7 +312,7 @@
 						<p>A lightweight expense-splitting app with Google sign-in, real-time balances between friends, multi-language support and swipe gestures — installable as a PWA.</p>
 						<div class="project-tags"><span>React</span><span>Vite</span><span>Firebase</span><span>i18next</span></div>
 						<div class="project-links">
-							<a class="primary" href="https://divideai.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+							<a class="primary" href="https://divideai.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
 							<a href="https://github.com/snackk/DivideAI" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
 						</div>
 					</div>
@@ -317,7 +330,7 @@
 						<p>A Jira-style Kanban board with per-person swimlanes, task precedences, recurring tasks, markdown descriptions with inline images, and multi-project support.</p>
 						<div class="project-tags"><span>React</span><span>Firebase</span><span>Tailwind CSS</span><span>Markdown</span></div>
 						<div class="project-links">
-							<a class="primary" href="https://conta-flow.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square"></i> Live Demo</a>
+							<a class="primary" href="https://conta-flow.snackk-media.com" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live Demo</a>
 							<a href="https://github.com/snackk/conta-flow-ai" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
 						</div>
 					</div>
@@ -440,7 +453,7 @@
 					<a class="btn btn-ghost" target="_blank" rel="noopener" href="https://github.com/snackk"><i class="fab fa-github"></i> GitHub</a>
 				</div>
 				<div class="contact-meta">
-					<span><i class="fas fa-location-dot"></i>Lisbon, Portugal</span>
+					<span><i class="fas fa-map-marker-alt"></i>Lisbon, Portugal</span>
 					<span><i class="fas fa-briefcase"></i>Open to freelance &amp; collaborations</span>
 				</div>
 			</div>
