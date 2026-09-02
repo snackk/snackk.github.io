@@ -122,6 +122,39 @@
 		});
 	});
 
+	/* ---------- Project screenshot lightbox ---------- */
+	var lightbox = document.getElementById('lightbox');
+	var lightboxImg = document.getElementById('lightboxImg');
+	var lightboxClose = document.getElementById('lightboxClose');
+
+	function openLightbox(src, alt) {
+		if (!lightbox || !lightboxImg) return;
+		lightboxImg.setAttribute('src', src);
+		lightboxImg.setAttribute('alt', alt || '');
+		lightbox.classList.add('active');
+		document.body.style.overflow = 'hidden';
+	}
+	function closeLightbox() {
+		if (!lightbox) return;
+		lightbox.classList.remove('active');
+		document.body.style.overflow = '';
+	}
+	document.querySelectorAll('.project-thumb img.shot, .phone-mockup .screen img').forEach(function (img) {
+		img.addEventListener('click', function (e) {
+			e.stopPropagation();
+			openLightbox(img.getAttribute('src'), img.getAttribute('alt'));
+		});
+	});
+	if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+	if (lightbox) {
+		lightbox.addEventListener('click', function (e) {
+			if (e.target === lightbox) closeLightbox();
+		});
+	}
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape') closeLightbox();
+	});
+
 	/* ---------- Age calculation ---------- */
 	function calculateAge(birthday) {
 		var birthDate = new Date(birthday);
